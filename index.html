@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,63 +15,115 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="profile">
+      <div class="profile-img">
+        <img src="./images/image-jeremy.png" alt="">
+      </div>
+      <div class="name">
+        <span>Report for</span>
+        <p>Jeremy Robson</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>Daily</li>
+        <li>Weekly</li>
+        <li>Monthly</li>
+      </ul>
+    </nav>
+  </header>
 
-  Report for
-  Jeremy Robson
+  <main>
+    <div class="cards">
+      <div class="card work">
+        <div class="card-title">
+          <p>Work</p>
+          <div class="options">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="time-tracked">
+          <div class="current">32hrs</div>
+          <div class="previous">Last Week - 36hrs</div>
+        </div>
+      </div>
+      <div class="card play">
+        <div class="card-title">
+          <p>Work</p>
+          <div class="options">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="time-tracked">
+          <div class="current">32hrs</div>
+          <div class="previous">Last Week - 36hrs</div>
+        </div>
+      </div>
+      <div class="card study">
+        <div class="card-title">
+          <p>Work</p>
+          <div class="options">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="time-tracked">
+          <div class="current">32hrs</div>
+          <div class="previous">Last Week - 36hrs</div>
+        </div>
+      </div>
+      <div class="card exercise">
+        <div class="card-title">
+          <p>Work</p>
+          <div class="options">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="time-tracked">
+          <div class="current">32hrs</div>
+          <div class="previous">Last Week - 36hrs</div>
+        </div>
+      </div>
+      <div class="card social">
+        <div class="card-title">
+          <p>Work</p>
+          <div class="options">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="time-tracked">
+          <div class="current">32hrs</div>
+          <div class="previous">Last Week - 36hrs</div>
+        </div>
+      </div>
+      <div class="card self-care">
+        <div class="card-title">
+          <p>Work</p>
+          <div class="options">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="time-tracked">
+          <div class="current">32hrs</div>
+          <div class="previous">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
+  <script src="script.js"></script>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
