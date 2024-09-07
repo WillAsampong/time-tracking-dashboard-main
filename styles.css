@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Rubik", sans-serif;
+    /* outline: 1px solid #fff; */
 }
 
 body {
@@ -13,15 +14,15 @@ body {
 
 header {
     background-color: hsl(235, 46%, 20%);
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .profile {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: hsl(246, 80%, 60%);
 }
 
@@ -55,11 +56,59 @@ nav ul li {
     color: hsl(235, 45%, 61%);
 }
 
-/* main .cards{
+main .cards{
     display: grid;
-} */
+    row-gap: 20px;
+}
 
 main .cards .card{
-    border: 1px solid #fff;
-    color: #fff
+    height: 150px;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+main .cards .card img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: translateY(-10%);
+    z-index: 1;
+}
+
+main .cards .card .time-tracker-card {
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.time-tracker-card .card-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.time-tracker-card .card-title p{
+    font-size: 25px;
+    font-weight: 500;
+    color: hsl(236, 100%, 87%);
+}
+
+.time-tracked {
+    display: flex;
+    justify-content: space-between;
+}
+
+.current {
+    font-size: 30px;
+    font-weight: 300;
+    color:hsl(236, 100%, 87%);
 }
