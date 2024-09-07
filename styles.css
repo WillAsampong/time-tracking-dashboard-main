@@ -63,21 +63,45 @@ main .cards{
 
 main .cards .card{
     height: 150px;
-    background-color: hsl(15, 100%, 70%);
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
+
 main .cards .card img{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     position: absolute;
     top: 0;
     right: 10px;
     transform: translateY(-10%);
     z-index: 1;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
 }
 
 main .cards .card .time-tracker-card {
@@ -97,13 +121,19 @@ main .cards .card .time-tracker-card {
 }
 
 .time-tracker-card .card-title p{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     color: hsl(236, 100%, 87%);
 }
 
+/* .time-tracker-card .card-title img {
+    width: 10px;
+    height: 10px;
+} */
+
 .time-tracked {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -111,4 +141,8 @@ main .cards .card .time-tracker-card {
     font-size: 30px;
     font-weight: 300;
     color:hsl(236, 100%, 87%);
+}
+
+.previous {
+    color: hsl(235, 45%, 61%);
 }
