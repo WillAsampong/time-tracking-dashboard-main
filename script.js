@@ -26,7 +26,7 @@ fetch('/data.json')
     }
 
     updateStats('daily');
-    
+
     dailyStats.addEventListener('click', () => {
         console.log('daily');
         updateStats('daily');

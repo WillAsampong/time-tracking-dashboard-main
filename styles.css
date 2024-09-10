@@ -56,6 +56,12 @@ nav ul li {
     color: hsl(235, 45%, 61%);
 }
 
+nav ul li:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
 nav ul li.active {
     color: #fff;
 }
@@ -114,22 +120,16 @@ main .cards .card .time-tracker-card {
     z-index: 10;
     position: absolute;
     bottom: 0;
-    max-width: 280px;
     width: 100%;
 }
 
 .time-tracker-card .card-title{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 500;
     color: hsl(236, 100%, 87%);
-}
-
-.time-tracker-card img {
-    width: 10px;
-    height: 10px;
 }
 
 .time-tracked {
