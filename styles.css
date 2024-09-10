@@ -70,7 +70,6 @@ main .cards .card{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    width: 100%;
 }
 
 
@@ -115,6 +114,7 @@ main .cards .card .time-tracker-card {
     z-index: 10;
     position: absolute;
     bottom: 0;
+    max-width: 280px;
     width: 100%;
 }
 
@@ -122,18 +122,15 @@ main .cards .card .time-tracker-card {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-
-.time-tracker-card .card-title p{
     font-size: 18px;
     font-weight: 500;
     color: hsl(236, 100%, 87%);
 }
 
-/* .time-tracker-card .card-title img {
+.time-tracker-card img {
     width: 10px;
     height: 10px;
-} */
+}
 
 .time-tracked {
     display: flex;
@@ -152,5 +149,32 @@ main .cards .card .time-tracker-card {
 }
 
 @media screen and (min-width: 700px) {
-    
+    body{
+        display: grid;
+        grid-template-columns: 200px 3fr;
+        gap: 20px;
+    }
+
+    header {
+        display: grid;
+    }
+
+    header nav ul {
+        align-items: center;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }

@@ -21,7 +21,7 @@ fetch('/data.json')
 
 
 
-            previous.textContent = timeframe === 'daily' ? `Yesterday - ${data[index].timeframes.daily.previous}hrs` : timeframe === 'weekly' ? `Last week - ${data[index].timeframes.weekly.previous}` : `Last month - ${data[index].timeframes.monthly.previous}`;
+            previous.textContent = timeframe === 'daily' ? `Yesterday - ${data[index].timeframes.daily.previous}hrs` : timeframe === 'weekly' ? `Last week - ${data[index].timeframes.weekly.previous}hrs` : `Last month - ${data[index].timeframes.monthly.previous}hrs`;
         });
     }
 
